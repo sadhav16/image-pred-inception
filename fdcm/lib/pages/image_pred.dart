@@ -19,7 +19,7 @@ class _ImagePredictorState extends State<ImagePredictor> {
   String _geminiResponse = "Calorie Genie";
   bool _isLoading = false;
 
-  final String apiUrl = "http://192.168.183.150:5000/predict"; // Flask server IP
+  final String apiUrl = "https://image-pred-inception.onrender.com/predict"; // Flask server IP
   GeminiService geminiService = GeminiService(); // Instantiate GeminiService
 
   Future<void> _pickImage(ImageSource source) async {
